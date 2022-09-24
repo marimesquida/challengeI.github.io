@@ -1,0 +1,244 @@
+body {
+    background-color: lavender;
+    background-image: url('forest2.jpg');
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    padding: 10px;
+}
+
+header {
+    font-size: 50px;
+    color: aliceblue;
+}
+.titulo{
+    color: forestgreen;
+    opacity: 60%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 300px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-flex;
+    padding: 10px;
+}
+.alura{
+    padding: 10px;
+    display: inline-block;
+    height: auto;
+    position: absolute;
+    margin-top: auto;
+}
+texto {
+
+}
+#areatexto {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: forestgreen;
+    opacity: 60%;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+    width: 400px;
+    height: auto;
+    border-color: lavender;
+    resize: none;
+    box-shadow: 10px 5px 5px black;
+}
+#areatexto:hover{
+     background-color: forestgreen;
+     opacity: 70%;
+}
+::placeholder{
+    color: black;
+    opacity: 100%;
+}
+#texto{
+    vertical-align: top;
+    display: inline-block;
+}
+#areaencrip {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: forestgreen;
+    opacity: 60%;
+    margin-left: 300px;
+    margin-right: 50px;
+    margin-top: auto;
+    width: 350px;
+    height: auto;
+    border-color: lavender;
+    resize: none;
+    box-shadow: 10px 5px 5px black;
+}
+
+#areaencrip:hover{
+    background-color: forestgreen;
+    opacity: 70%;
+}
+#output pre{
+    padding: 10px;
+}
+#botonencriptar {
+    background-color: lavender;
+    opacity: 70%;
+    color: black;
+    padding: 10px;
+    padding-left: 26px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-right: 10px;
+    margin-top: 120px;
+    position: absolute;
+    width: 120px;
+    border-radius: 10%;
+}
+#botonencriptar:hover{
+    resize: 20px;
+    opacity: 100%;
+}
+#botondesencriptar {
+    background-color: lavender;
+    opacity: 70%;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-right: 10px;
+    margin-top: 200px;
+    width: 120px;
+    border-radius: 10%;
+}
+#botondesencriptar:hover{
+    resize: 20px;
+    opacity: 100%;
+}
+#botoncopiar {
+    background-color: lavender;
+    opacity: 70%;
+    color: black;
+    padding: 10px;
+    padding-left: 35px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 90px;
+    margin-right: 10px;
+    width: 120px;
+    border-radius: 10%;
+}
+#botoncopiar:hover{
+    resize: 20px;
+    opacity: 100%;
+}
+
+footer{
+    background-color: black;
+    opacity: 40%;
+    vertical-align: middle;
+    color: lavender;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1100px){
+    body{
+        background-color: lavender;
+        background-image: url(forest2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .alura{
+        padding: 10px;
+        display: inline-block;
+        height: auto;
+        position: absolute;
+        margin-top: auto;
+    }
+    .titulo{
+        color: forestgreen;
+        opacity: 60%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: normal;
+        margin-left: 50px;
+        margin-top: auto;
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-flex;
+        padding: 10px;
+    }
+    #areatexto{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 98%;
+        height: auto;
+        resize: none;
+        padding: 5px;
+        
+    }
+    #areaencrip{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: auto;
+        width: 95%;
+        height: auto;
+    }
+    #botonencriptar{
+        margin-left: 5px;
+        margin-top: 30px;
+        padding: 10px;
+        padding-left: 27px;
+        height: 50px;
+        border-radius: 10%;
+    }
+    #botondesencriptar{
+        margin-left: 125px;
+        margin-top: 30px;
+        padding: 10px;
+        height: 50px;
+        border-radius: 10%;
+    }
+    #botoncopiar {
+        padding: 10px;
+        display: inline-block;
+        flex-wrap: wrap;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 245px;
+        height: 50px;
+        padding: 10px;
+        padding-right: 33px;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 10%;
+    }
+
+    
+}
+
+

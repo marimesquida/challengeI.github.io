@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <meta name="viewport" content="width=device-width">
+        <title> Encriptador de Textos MBM </title>
+        <link rel="stylesheet" href="files/reset.css">
+        <link rel="stylesheet" href="files/style.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="alura" src="files/vector.png" alt="A">
+            <h1 class="titulo"> Bienvenidos al Encriptador de Textos </h1>
+        </header>
+
+        <main>
+            <div id="texto">
+                <textarea rows="15" cols="50"  spellcheck="true"placeholder="Ingrese su texto aquí" autofocus  style="color: black" id="areatexto"></textarea>
+                <input class="boton" type="button" value="Encriptar" id="botonencriptar" style="font-size: 15px ; font-weight: bold;">
+                <input class="boton" type="button" value="Desencriptar" id="botondesencriptar" style="font-size: 15px ; font-weight: bold; ">
+                <button onclick="copiarAlPortapapeles()" id="botoncopiar" style="color: black; font-weight:bold; font: size 15px;"> Copiar </button>
+                <textarea class="text-input-salida" rows="15" cols="50" readonly spellcheck="true"placeholder="Aquí está su texto" style="color: black; font-weight: bold;" id="areaencrip"></textarea>
+            </div>        
+        </main>
+        <footer>
+            Encriptador desarrollado por Marianela Mesquida para Alura - Oracle ONE - 2022
+        </footer>
+    </body>
+    <script>
+        function encriptar () {
+            var texto = document.querySelector("#areatexto").value;
+            texto = texto.toLowerCase(); 
+            var textoEncrip = texto.replace(/e/g,"enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
+            document.querySelector(".text-input-salida").value = textoEncrip;
+            document.querySelector("#areaencrip").value;
+        }
+        var boton1 = document.querySelector("#botonencriptar");
+        boton1.onclick = encriptar;
+        
+        function desencriptar (){
+            var texto = document.querySelector("#areatexto").value;
+            var textoEncrip = texto.replace(/enter/g,"e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+            document.querySelector("#areaencrip").value = textoEncrip;
+            document.querySelector("#areatexto").value;
+        }
+
+        var boton2 = document.querySelector("#botondesencriptar");
+        boton2.onclick = desencriptar;
+        
+        function copiarAlPortapapeles (){
+            var codigoACopiar = document.querySelector("#areaencrip").value;
+            navigator.clipboard.writeText(codigoACopiar)
+            alert ("El mensaje secreto se ha copiado exitosamente en el portapapeles")
+        }
+
+    </script>
+   
+</html>
