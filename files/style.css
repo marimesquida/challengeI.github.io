@@ -198,6 +198,7 @@ footer{
         height: auto;
         resize: none;
         padding: 5px;
+        opacity: 60%;
         
     }
     #areaencrip{
@@ -207,6 +208,7 @@ footer{
         margin-bottom: auto;
         width: 95%;
         height: auto;
+        opacity: 60%;
     }
     #botonencriptar{
         margin-left: 5px;
