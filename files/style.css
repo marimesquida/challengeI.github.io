@@ -169,13 +169,6 @@ footer{
         padding: 10px;
         border-left: 0px;
     }
-    .alura{
-        padding: 10px;
-        display: inline-block;
-        height: auto;
-        position: absolute;
-        margin-top: auto;
-    }
     .titulo{
         color: forestgreen;
         opacity: 60%;
