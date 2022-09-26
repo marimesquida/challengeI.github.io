@@ -1,12 +1,10 @@
-*{
-    margin: 0px;
-}
 body {
     background-color: lavender;
     background-image: url('forest2.jpg');
     background-size: 100% 100%;
     background-repeat: repeat;
-    padding: 10px;
+    margin: 0px;
+    border: 0px;
 }
 
 header {
@@ -27,16 +25,6 @@ header {
     display: inline-flex;
     padding: 10px;
 }
-.alura{
-    padding: 10px;
-    display: inline-block;
-    height: auto;
-    position: absolute;
-    margin-top: auto;
-}
-texto {
-
-}
 #areatexto {
     font-size: 25px;
     font-style: italic;
@@ -53,7 +41,6 @@ texto {
     margin-bottom: 50px;
     width: 400px;
     height: auto;
-    border-color: lavender;
     resize: none;
     box-shadow: 10px 5px 5px black;
 }
@@ -80,11 +67,10 @@ texto {
     background-color: forestgreen;
     opacity: 60%;
     margin-left: 300px;
-    margin-right: 50px;
+    margin-right: 10px;
     margin-top: auto;
     width: 350px;
     height: auto;
-    border-color: lavender;
     resize: none;
     box-shadow: 10px 5px 5px black;
 }
@@ -148,6 +134,8 @@ texto {
     margin-right: 10px;
     width: 120px;
     border-radius: 10%;
+    font-weight: bold;
+    font-size: 15px;
 }
 #botoncopiar:hover{
     resize: 20px;
@@ -170,6 +158,16 @@ footer{
         background-image: url(forest2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding-right: 15px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-left: 0px;
     }
     .alura{
         padding: 10px;
@@ -202,45 +200,52 @@ footer{
         resize: none;
         padding: 5px;
         opacity: 60%;
+        display: flex;
+        flex-direction: column;
         
     }
     #areaencrip{
         margin-left: auto;
         margin-right: auto;
-        margin-top: 100px;
+        margin-top: 150px;
         margin-bottom: auto;
         width: 95%;
         height: auto;
         opacity: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .boton{
+        align-items: center;
+        position: relative;
+        flex-direction: row;
     }
     #botonencriptar{
-        margin-left: 5px;
+        margin-left: 60px;
         margin-top: 30px;
         padding: 10px;
         padding-left: 27px;
         height: 50px;
-        border-radius: 10%;
+        display: flex;
+        width: 120px;
     }
     #botondesencriptar{
-        margin-left: 125px;
+        margin-left: 200px;
         margin-top: 30px;
-        padding: 10px;
         height: 50px;
-        border-radius: 10%;
+        display:flex;
+        padding-left: 13px;
     }
     #botoncopiar {
-        padding: 10px;
-        display: inline-block;
-        flex-wrap: wrap;
+        display: flex;
+        gap: 10px;
         position: absolute;
-        margin-top: 30px;
-        margin-left: 245px;
+        margin-top: 85px;
+        margin-left: 135px;
         height: 50px;
         padding: 10px;
-        padding-right: 33px;
-        font-weight: bold;
-        font-size: 15px;
-        border-radius: 10%;
+        padding-left: 32px;
+        align-content: center;
     }
 
     
